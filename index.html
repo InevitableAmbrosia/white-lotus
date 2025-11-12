@@ -1,0 +1,64 @@
+<html>
+	<head>
+		<script src="lib/jquery-3.6.0.min.js"></script>
+		<script src="lib/anchor.js"></script>
+		<!--Models!-->
+		<script src="script/models/menu.js"></script>
+		<script src="script/models/white_lotus.js"></script>
+		<script src="script/models/quotation_graph.js"></script>
+		<!--Views!-->
+		<script src="script/views/menu.js"></script>
+		<script src="script/views/vehicle.js"></script>
+		<script src="script/views/white_lotus.js"></script>
+		<!--Controllers!-->
+		<script src="script/controllers/page.js"></script>
+		<script src="script/controllers/node_helper.js"></script>
+
+
+
+		<!--CSS!-->
+		<link rel="stylesheet" href="style.css"></link>
+	
+		
+	</head>
+	<body>
+		<div class="sidebar">
+			<h1><a class="ANCHOR white_lotus" href="#white_lotus">White Lotus</a></h1>
+			<ul class="menu">
+				<li class="thinkers_li"><a href="#" class="show" id="char_tog1">&#9654;</a><a href="#" class="hide" id="char_tog">&#9660;</a><a class="nav_a" href="#">Thinkers</a>
+					<ul class="thinkers_menu">
+						
+					</ul>
+				</li>
+				<li class="sutras_li"><a href="#" class="show" id="sutras_tog1">&#9654;</a><a href="#" class="hide" id="sutras_tog">&#9660;</a><a class="nav_a" href="#">Sutras</a>
+					<ul class="sutras_menu">
+						
+					</ul>
+				</li>
+				<li class="buddhist_li"><a href="#" class="show" id="buddha_tog1">&#9654;</a><a href="#" class="hide" id="buddha_tog">&#9660;</a><a class="nav_a" href="#">Buddhist Glossary</a>
+					<ul class="buddhist_menu">
+						
+					</ul>
+				</li>
+				<li class="hermetic_li"><a href="#" class="show" id="hermetic_tog1">&#9654;</a><a href="#" class="hide" id="herm_tog">&#9660;</a><a class="nav_a" href="#">Hermetic Glossary</a>
+					<ul class="hermetic_menu">
+						
+					</ul>
+				</li>
+			</ul>
+			
+		</div>	
+		<h2 class="page_heading"></h2>
+
+		<div class="ANCHOR_partial white_lotus">
+			<p id="home_description"></p>
+			<p id="navigation_instructions"></p>
+			<p id="engineering"></p>
+		</div>
+		<div class="ANCHOR_partial vehicle">
+			<div id="quotations_container">
+				
+			</div>
+		</div>
+	</body>
+</html>
