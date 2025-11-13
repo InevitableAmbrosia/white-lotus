@@ -87,7 +87,7 @@ h1 a, h1 a :visited{
 	box-shadow:0px 4px 5px orange;
 	position:relative;
 	z-index:999;
-	text-align:center;
+	text-align:left;
 	width:281px;
 	box-sizing:border-box;
 	font-family:"Zen Dots", "Georgia";
@@ -97,7 +97,7 @@ h1 a, h1 a :visited{
 
 .menu{
 	width:281px;
-	height:100%;
+	height:calc(100% - 71px);
 	background-color:blue;
 	overflow-y:auto;
 
@@ -115,8 +115,8 @@ h1 a, h1 a :visited{
 	padding-bottom:17px;
 	padding-top:17px;
 	width:281px;
-	color:darkgoldenrod;
-	text-shadow:1px 1px black;
+	color:orange;
+	text-shadow:1px 1px darkgoldenrod;
 	position:relative;
 	letter-spacing:3px;
 	text-decoration:none;
@@ -129,7 +129,7 @@ h1 a, h1 a :visited{
 }
 
 .show, .hide{
-	color:yellow;
+	color:red;
 	padding-top:15px;
 	padding-left:8px;
 	float:left;
@@ -143,24 +143,24 @@ h1 a, h1 a :visited{
 	display:none;
 }
 
-.vehicle {
-	padding:12px 8px 12px 28px;
+a.vehicle:not(.mobile_sub li a.vehicle) {
+	padding:12px 8px 12px 30px;
 	display:block;
 	color:yellow;
 	font-size:14px;
 	text-decoration:none;
-	letter-spacing: 1px;
+	letter-spacing: 3px;
 	font-family:"Stack Sans Notch", "Tahoma";
-	font-weight:200;
+	font-weight:400;
 }
 
 
 .ANCHOR_partial{
 	left:281px;
-	height:calc(100% - 69px);
+	height:calc(100% - 71px);
 	width:calc(100% - 281px);
 	position:absolute;
-	top:69px;
+	top:71px;
     background-color: rgba(255,255,255,0.3);
     background-blend-mode: lighten;
 }
@@ -182,9 +182,9 @@ div.white_lotus{
 	width:calc(100% - 281px);
 	padding-right:calc(3.5% + 31px);
 	box-sizing:border-box;
-	background-color:red;
+	background-color:orange;
 	text-align:right;
-	box-shadow:5px 5px 5px orange;
+	box-shadow:5px 5px 5px red;
 }
 
 .page_heading{
@@ -192,7 +192,7 @@ div.white_lotus{
 	padding-top:25px;
 	font-weight:bold;
 	color:blue;
-	text-shadow:1px 2px yellow;
+	text-shadow:1px 1px red;
 	height:47px;
 	letter-spacing:2px;
 	width:100%;
@@ -219,7 +219,7 @@ div.white_lotus{
 
 .quotation::first-letter{
 	float:left;
-	color:blue;
+	color:red;
 	font-size:32px;
 	width:34px;
 	font-style:italic;
@@ -279,16 +279,17 @@ div.white_lotus{
 	display:none;
 }
 
-.white_lotus{
+div.white_lotus{
 	text-align:justify;
 	font-family:"Montserrat", sans-serif;
+	font-style:normal;
 
 }
 
 .white_lotus_img{
 	
 	position:fixed;
-	left:248px;
+	right:0px;
 	width:33px;
 	top:52px;
 	z-index:9999;
@@ -315,9 +316,9 @@ div.white_lotus{
 
 	h1 a, h1 a:visited{
 		position:fixed;
-		top:20px;
+		top:12px;
 		display:block;
-		font-size:20px;
+		font-size:33px;
 		text-align:left;
 		left:78px;
 		box-shadow:none;
@@ -327,7 +328,7 @@ div.white_lotus{
 
 	#mobile_header{
 		background-color:blue;
-		height:101px;
+		height:200px;
 		box-shadow:3px 4px 5px yellow;
 		width:100%;
 		display:block;
@@ -353,8 +354,8 @@ div.white_lotus{
 
 
 	.page_heading{
-		color:red;
-		text-shadow:2px 2px goldenrod;
+		color:yellow;
+		text-shadow:2px 2px red;
 		padding-top:37px;
 		text-align:right;
 		box-shadow:none;
@@ -362,15 +363,23 @@ div.white_lotus{
 
 	.mobile_nav_a{
 		margin-left:23px;
-		font-size:24px;
-		padding:36px 0px 36px 31px;
+		font-size:28px;
+		padding:34px 0px 34px 31px;
+		color:blue;
+		display:block;
+		width:100%;
+		text-shadow:1px 1px darkgoldenrod;
 	}
 
-	.vehicle{
+	.mobile_sub li a.vehicle, .mobile_sub li a.vehicle:visited{
 		color:red;
-		font-size:18px;
+		font-size:21px;
 		margin-left:34px;
-		padding:23px 0px 23px 28px;
+		padding:42px 0px 42px 28px;
+		text-shadow:1px 1px goldenrod;
+		text-decoration:none;
+		display:block;
+		font-family:"Stack Sans Notch", "Tahoma";
 	}
 
 	.sidebar{
@@ -401,7 +410,7 @@ div.white_lotus{
 		height:calc(100% - 101px);
 		position:absolute;
 		z-index:996;
-		background-color:yellow;
+		background-color:orange;
 	}
 
 	.mobile_sidebar{
@@ -428,6 +437,6 @@ div.white_lotus{
 		position:fixed;
 		right:0px;
 		left:auto;
-		top:82px;
+		top:181px;
 	}
 }
