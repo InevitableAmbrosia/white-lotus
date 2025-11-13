@@ -12,19 +12,20 @@ function initializeVehicle(){
 			var end = rel.end;
 			var node_start = graph.nodes.find(node => node.index === start);
 			var node_end = graph.nodes.find(node => node.index === end);
-			if(notQuoted(node_start.index)){
-				pushNode(node_start)
+			if(notQuoted(node_start.index)){				
 				pushIndex(node_start.index)
+				implementQuotation(node_start)
 
 			}
 			if(notQuoted(node_end.index)){
-				pushNode(node_end);
+				
 				pushIndex(node_end.index);
+				implementQuotation(node_end)
 			}
 
 		}
 	})
-	fiat();
+	
 }
 
 function implementQuotation(node){
