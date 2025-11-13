@@ -222,13 +222,11 @@ div.white_lotus{
 	color:blue;
 	font-size:32px;
 	width:34px;
-	position:relative;
-	top:-9px;
-	left:9px;
 	font-style:italic;
 	font-family:"Zen Dots", "Georgia";
 	display:inline-block;
 	vertical-align:middle;
+	padding-right:7px;
 
 
 }
@@ -247,10 +245,11 @@ div.white_lotus{
 	box-sizing:border-box;
 	font-style:italic;
 	line-height:19px;
-	font-size:14px;
+	font-size:16px;
 	display:inline-block;
 	
 	line-height:23px;
+	font-family:"Montserrat", sans-serif;
 
 
 	
@@ -263,13 +262,13 @@ div.white_lotus{
 	letter-spacing:1px;
 	text-align:right;
 	bottom:9px;
-	font-size:17px;
+	font-size:16px;
 	padding-top:11px;
 	padding-right:16px;
 	display:inline-block;
 	vertical-align:middle;
 
-	font-family:"Zen Dots", "Georgia";
+	font-family:"Montserrat", sans-serif;
 }
 
 .mobile_sidebar{
@@ -282,6 +281,7 @@ div.white_lotus{
 
 .white_lotus{
 	text-align:justify;
+	font-family:"Montserrat", sans-serif;
 
 }
 
