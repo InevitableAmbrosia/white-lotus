@@ -64,6 +64,9 @@ q:before, q:after {
 .ANCHOR_partial{
 	overflow-y:auto;
 	height:calc(100% - 69px);
+	width:calc(100% - 281px);
+	box-sizing:border-box;
+	right:0px;
 	top:69px;
 	bottom:0px;
 	position:absolute;
@@ -73,18 +76,21 @@ q:before, q:after {
 
 h1 a, h1 a :visited{
 	display:block;
-	color:white;
+	color:orange;
+	text-shadow:1px 1px darkgoldenrod;
 	text-decoration:none;
 	font-size:32px;
 	padding-top:17px;
-	background-color:red;
-	
-	height:54px;
-	font-family:"Georgia";
-	box-shadow:0px 3px 3px lightgoldenrodyellow;
+	background-color:yellow;
+	padding-left:8px;
+	height:71px;
+	box-shadow:0px 4px 5px orange;
 	position:relative;
 	z-index:999;
 	text-align:center;
+	width:281px;
+	box-sizing:border-box;
+	font-family:"Zen Dots", "Georgia";
 
 	
 }
@@ -94,7 +100,6 @@ h1 a, h1 a :visited{
 	height:100%;
 	background-color:blue;
 	overflow-y:auto;
-	font-family: "Tahoma";
 
 
 }
@@ -114,8 +119,9 @@ h1 a, h1 a :visited{
 	text-shadow:1px 1px black;
 	position:relative;
 	letter-spacing:3px;
-	font-size:14px;
 	text-decoration:none;
+	font-family:"Stack Sans Notch", "Tahoma";
+	font-weight:400;
 }
 
 .menu ul{
@@ -137,47 +143,63 @@ h1 a, h1 a :visited{
 	display:none;
 }
 
-.menu li ul li a {
+.vehicle {
 	padding:12px 8px 12px 28px;
 	display:block;
-	color:palegoldenrod;
-	text-decoration:none;
+	color:yellow;
 	font-size:14px;
+	text-decoration:none;
 	letter-spacing: 1px;
+	font-family:"Stack Sans Notch", "Tahoma";
+	font-weight:200;
 }
 
 
 .ANCHOR_partial{
-	margin-left:281px;
+	left:281px;
 	height:calc(100% - 69px);
 	width:calc(100% - 281px);
 	position:absolute;
 	top:69px;
+    background-color: rgba(255,255,255,0.3);
+    background-blend-mode: lighten;
 }
 
 .white_lotus p{
-	padding-left:8px;
+	
 	padding-top:32px;
+}
+
+div.white_lotus{
+	padding-left:calc(3.5% + 31px);
+	padding-right: calc(3.5% + 31px);
+}
+.page_header{
+	position:fixed;
+	height:71px;
+	top:0px;
+	left:281px;
+	width:calc(100% - 281px);
+	padding-right:calc(3.5% + 31px);
+	box-sizing:border-box;
+	background-color:red;
+	text-align:right;
+	box-shadow:5px 5px 5px orange;
 }
 
 .page_heading{
 	font-size:21px;
-	padding-top:23px;
+	padding-top:25px;
 	font-weight:bold;
-	color:red;
-	text-shadow:1px 1px palegoldenrod;
-	position:fixed;
+	color:blue;
+	text-shadow:1px 2px yellow;
 	height:47px;
 	letter-spacing:2px;
-	top:0px;
-	left:281px;
 	width:100%;
-	box-shadow:3px 4px 5px black;
-	text-align:center;
-	background-color:yellow;
-	width:calc(100% - 281px);
-	padding-right:32px;
-	font-family:"Georgia";
+
+	font-family:"Zen Dots", "Georgia";
+	
+
 }
 
 .quotation_div{
@@ -187,47 +209,225 @@ h1 a, h1 a :visited{
 	padding-left:8px;
 	width:93%;
 	margin:0 auto;
-	height:116px;
+	display:grid;
+	align-items:center;
+	padding:32px 0px 32px 0px;
+
+	
 
 }
 
-.highT{
+.quotation::first-letter{
 	float:left;
-	color:red;
+	color:blue;
 	font-size:32px;
 	width:34px;
 	position:relative;
 	top:-9px;
-	left:25px;
+	left:9px;
 	font-style:italic;
+	font-family:"Zen Dots", "Georgia";
+	display:inline-block;
+	vertical-align:middle;
+
+
 }
 
 
 
 .quotation{
-	padding-left:16px;
 	color:black;
 	float:left;
+	display:block;
+	padding-left:16px;
 	padding-right:16px;
 	position:relative;
-	display:block;
-	width:calc(100% - 88px);
 	text-align:justify;
 	font-family:"Arial";
+	box-sizing:border-box;
 	font-style:italic;
 	line-height:19px;
 	font-size:14px;
+	display:inline-block;
+	
+	line-height:23px;
+
+
 	
 }
 
+
+
 .src{
-	width:100%;
 	color:orange;
 	letter-spacing:1px;
-	position:relative;
 	text-align:right;
-	top:17px;
-	display:block;
-	padding-bottom:9px;
-	right:41px;
+	bottom:9px;
+	font-size:17px;
+	padding-top:11px;
+	padding-right:16px;
+	display:inline-block;
+	vertical-align:middle;
+
+	font-family:"Zen Dots", "Georgia";
+}
+
+.mobile_sidebar{
+	display:none;
+}
+
+#mobile_header{
+	display:none;
+}
+
+.white_lotus{
+	text-align:justify;
+
+}
+
+.white_lotus_img{
+	
+	position:fixed;
+	left:248px;
+	width:33px;
+	top:52px;
+	z-index:9999;
+}
+
+/* MOBILE */
+@media(max-width:1079px){
+
+	#ham{
+		left:8px;
+		position:fixed;
+		font-size:55px;
+		color:yellow;
+		text-decoration:none;
+		top:19px;
+		z-index:9999;
+		padding-right:13px;
+	}
+
+	#ham:hover{
+		color:yellow;
+	}
+
+
+	h1 a, h1 a:visited{
+		position:fixed;
+		top:20px;
+		display:block;
+		font-size:20px;
+		text-align:left;
+		left:78px;
+		box-shadow:none;
+		background-color:blue;
+		width:182px;
+	}
+
+	#mobile_header{
+		background-color:blue;
+		height:101px;
+		box-shadow:3px 4px 5px yellow;
+		width:100%;
+		display:block;
+		position:fixed;
+		top:0px;
+		z-index:998;	
+	}
+
+	.show, .hide{
+		font-size:24px;
+		color:red;
+		padding-top:33px;
+	}
+
+	.page_header{
+		position:fixed;
+		padding-right:calc(3.5% + 57px);
+		
+		box-shadow:none;
+		z-index:998;
+		background-color:blue;
+	}
+
+
+	.page_heading{
+		color:red;
+		text-shadow:2px 2px goldenrod;
+		padding-top:37px;
+		text-align:right;
+		box-shadow:none;
+	}
+
+	.mobile_nav_a{
+		margin-left:23px;
+		font-size:24px;
+		padding:36px 0px 36px 31px;
+	}
+
+	.vehicle{
+		color:red;
+		font-size:18px;
+		margin-left:34px;
+		padding:23px 0px 23px 28px;
+	}
+
+	.sidebar{
+		display:none;
+	}
+
+	.menu{
+		display:none;
+	}
+
+	.highT{
+		font-size:48px;
+		left:0px;
+	}
+
+	.quotation_div{
+		height:220px;
+		margin:0;
+	}
+
+
+
+
+	.mobile_menu{
+		width:100%;
+		height:100%;
+		top:101px;
+		height:calc(100% - 101px);
+		position:absolute;
+		z-index:996;
+		background-color:yellow;
+	}
+
+	.mobile_sidebar{
+		display:block;
+	}
+
+	.ANCHOR_partial{
+		width:100%;
+		height:calc(100% - 101px);
+		padding-left:8px;
+		position:absolute;
+		left:0px;
+		padding-right:8px;
+		margin-left:0px;
+		top:101px;
+		right:0px;
+	}
+
+	.quotation{
+		font-size:16px;
+	}
+
+	.white_lotus_img{
+		position:fixed;
+		right:0px;
+		left:auto;
+		top:82px;
+	}
 }
