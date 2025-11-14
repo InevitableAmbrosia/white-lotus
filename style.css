@@ -325,7 +325,7 @@ div.white_lotus{
 		left:78px;
 		box-shadow:none;
 		background-color:blue;
-		width:220px;
+		width:240px;
 	}
 
 	#mobile_header{
@@ -348,17 +348,21 @@ div.white_lotus{
 	.page_header{
 		position:fixed;
 		padding-right:calc(3.5% + 57px);
-		
+		position:fixed;
+		top:178px;
+		padding-bottom:0px;
 		box-shadow:none;
+		background-color:transparent;
 		z-index:998;
-		background-color:blue;
+		height:auto;
 	}
 
 
 	.page_heading{
 		color:yellow;
+		padding-bottom:0px;
+		padding-top:0px;
 		text-shadow:2px 2px red;
-		padding-top:37px;
 		text-align:right;
 		box-shadow:none;
 	}
@@ -366,7 +370,7 @@ div.white_lotus{
 	.mobile_nav_a{
 		margin-left:15px;
 		font-size:28px;
-		padding:34px 0px 34px 64px;
+		padding:34px 0px 34px 67px;
 		color:blue;
 		box-sizing:border-box;
 		display:block;
@@ -377,7 +381,7 @@ div.white_lotus{
 	.mobile_sub li a.vehicle, .mobile_sub li a.vehicle:visited{
 		color:red;
 		font-size:21px;
-		padding:42px 0px 42px 79px;
+		padding:34px 0px 34px 84px;
 		text-shadow:1px 1px goldenrod;
 		box-sizing:border-box;
 
@@ -441,6 +445,6 @@ div.white_lotus{
 		position:fixed;
 		right:0px;
 		left:auto;
-		top:181px;
+		top:178px;
 	}
 }
