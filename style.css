@@ -92,6 +92,7 @@ h1 a, h1 a :visited{
 	box-sizing:border-box;
 	font-family:"Zen Dots", "Georgia";
 
+
 	
 }
 
@@ -427,13 +428,13 @@ div.white_lotus{
 
 	.ANCHOR_partial{
 		width:100%;
-		height:calc(100% - 101px);
+		height:calc(100% - 200px);
 		padding-left:8px;
 		position:absolute;
 		left:0px;
 		padding-right:8px;
 		margin-left:0px;
-		top:101px;
+		top:200px;
 		right:0px;
 	}
 
